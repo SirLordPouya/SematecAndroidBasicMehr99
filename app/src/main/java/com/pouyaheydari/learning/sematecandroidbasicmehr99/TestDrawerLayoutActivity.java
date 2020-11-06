@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -19,5 +20,7 @@ public class TestDrawerLayoutActivity extends AppCompatActivity {
         video.setMediaController(new MediaController(TestDrawerLayoutActivity.this));
         video.setVideoURI(Uri.parse(url));
         video.start();
+
+        Log.d("TAG", "onCreate: test");
     }
 }
