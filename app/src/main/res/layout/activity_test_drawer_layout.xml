@@ -19,12 +19,12 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="right"
         android:background="#FFF"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             style="@style/TextViewStyle"
@@ -36,5 +36,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="این یک متن تستی است" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open New Activity" />
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
