@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -12,16 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestHandlerActivity">
+        <activity android:name=".TestRecyclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestPermissionActivity">
-        </activity>
-        <activity android:name=".TestMenuActivity"></activity>
+        <activity android:name=".TestHandlerActivity"></activity>
+        <activity android:name=".TestPermissionActivity"></activity>
+        <activity android:name=".TestMenuActivity" />
         <activity android:name=".TestAlertDialogActivity" />
         <activity android:name=".TestNotificationActivity" />
         <activity android:name=".TestSharedPreferencesActivity" />
@@ -33,6 +34,14 @@
         <activity android:name=".TestDrawerLayoutActivity" />
         <activity android:name=".TestWebViewActivity" />
         <activity android:name=".MainActivity" />
+
+        <service android:name=".TestService" />
+
+        <receiver android:name=".TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
