@@ -13,15 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestRecyclerViewActivity">
+        <activity android:name=".TestGlideActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestHandlerActivity"></activity>
-        <activity android:name=".TestPermissionActivity"></activity>
+        <activity android:name=".TestAsyncHttpClientActivity">
+        </activity>
+        <activity android:name=".TestHttpUrlConnectionActivity"></activity>
+        <activity android:name=".TestRecyclerViewActivity" />
+        <activity android:name=".TestHandlerActivity" />
+        <activity android:name=".TestPermissionActivity" />
         <activity android:name=".TestMenuActivity" />
         <activity android:name=".TestAlertDialogActivity" />
         <activity android:name=".TestNotificationActivity" />
